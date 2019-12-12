@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Auth0" src="https://cdn.auth0.com/styleguide/components/1.0.8/media/logos/img/badge.png" width="60" />
   </a>
 </p>
 <h1 align="center">
