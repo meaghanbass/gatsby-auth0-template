@@ -1,23 +1,12 @@
 import React from "react"
-// import { Link } from "gatsby"
 import "../styles/styles.scss"
 import "../styles/imports.css"
 import PublicSidebar from './publicsidebar'
 import PrivateSidebar from './privatesidebar'
-// import { useStaticQuery, graphql } from "gatsby"
 import Header from './header'
 import Panel from './panel'
 
 const Layout = ({children}) => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         site {
-    //         siteMetadata {
-    //             title
-    //         }
-    //         }
-    //     }
-    // `)
     return (
         <>
         <Header />
@@ -31,7 +20,7 @@ const Layout = ({children}) => {
             
             <main className="w-3/4 m-4">
                 <Panel>
-                {children}
+                    {children}
                 </Panel>
             </main>
         </div>

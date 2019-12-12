@@ -3,13 +3,12 @@ import React from "react"
 import "../styles/styles.scss"
 import "../styles/imports.css"
 import Layout from "../components/layout"
-
+import DefaultContents from "../components/defaultContents"
 
 export default ({children}) => (
     <Layout>
         <div>
-            {/* <p className="text-blue-600">hello gatsby (index.js)</p> */}
-            {/* <Link to="/account">Go to your account (index.js)</Link> */}
+            <DefaultContents />
             {children}
         </div>
     </Layout>

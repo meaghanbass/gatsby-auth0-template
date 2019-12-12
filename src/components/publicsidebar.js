@@ -60,7 +60,7 @@ const PublicSidebar = ({children, data}) => (
                 </div>
                 ))}
 
-                <p>Russia</p>
+                <p>Next</p>
                 {data.next.edges.map(({ node }) => (
                 <div className="ml-6" key={node.id}>
                     <Link to={node.fields.slug}>

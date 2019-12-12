@@ -1,6 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
-// import "../styles/styles.scss"
+import { Link } from "gatsby"
 import AuthStatus from "./authstatus"
 
 const Header = ({children}) => (
@@ -11,13 +10,13 @@ const Header = ({children}) => (
                 <p className="font-thin text-xl font-sans mb-4">Resources for algotrading and indicator scripting in Python</p>
             </div>
             <div className="font-sans text-sm">
-                {/* <Link to="/account">Log In</Link> */}
                 <AuthStatus />
 
             </div>
         </div>
-        <div className="w-screen theme-color h-16 flex items-center font-sans font-hairline text-white uppercase">
+        <div className="w-screen theme-color h-16 flex items-center font-sans font-thin text-white uppercase">
             <div className="container flex flex-row">
+                <Link className="mx-3" to ="/">Home</Link>
                 <p className="mx-3">Overview</p>
                 <ul className="mx-3">
                     <li>Item</li>

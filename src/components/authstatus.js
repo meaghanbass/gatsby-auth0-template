@@ -1,11 +1,7 @@
 import React from "react"
 import { Router } from "@reach/router"
-// import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
-// import Loader from "../components/loader"
-// import "../styles/styles.scss"
-// import Layout from "../components/layout"
 
 const HomeComp = ({ user }) => {
     return <p>Hi, {user.name ? user.name : "friend"}!</p>
@@ -13,21 +9,19 @@ const HomeComp = ({ user }) => {
 
 const AccountComp = () => {
     if (!isAuthenticated()) {
-        // login()
-        // return <Loader />
         return <Link to="/account">Log In</Link>
     }
 
     const user = getProfile()
 
     return (
-        // <Layout>
-        <>
-        <Router>
+        <div className="text-right">
+        {/* <Router>
             <HomeComp path="/account/" user={user} />
-        </Router>
-        <nav className="text-blue-600 text-right">
-            {/* <Link to="/account/">Home</Link>{" "} */}
+        </Router> */}
+        <HomeComp path="/account/" user={user} />
+        <Link to="/account">Account Home</Link>
+        <nav className="text-blue-600">
             <a
                 href="#logout"
                 onClick={e => {
@@ -38,9 +32,7 @@ const AccountComp = () => {
                 Log Out
             </a>
         </nav>
-
-        </>
-        // </Layout>
+        </div>
     )
 }
 
