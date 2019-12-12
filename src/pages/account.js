@@ -1,32 +1,28 @@
 import React from "react"
-import { Router } from "@reach/router"
-import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
-import { Link } from "gatsby"
+// import { Router } from "@reach/router"
+// import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
+import { login, logout, isAuthenticated } from "../utils/auth"
+// import { Link } from "gatsby"
 import Loader from "../components/loader"
-import "../styles/styles.css"
+// import "../styles/styles.scss"
 import Layout from "../components/layout"
 
-const Home = ({ user }) => {
-    return <p>Hi, {user.name ? user.name : "friend"}!</p>
-}
-const Settings = () => <p>Settings</p>
-const Billing = () => <p>Billing</p>
+// const Home = ({ user }) => {
+//     return <p>Hi, {user.name ? user.name : "friend"}!</p>
+// }
 
 const Account = () => {
     if (!isAuthenticated()) {
         login()
-        // return <p>Redirecting to login...</p>
         return <Loader />
     }
 
-    const user = getProfile()
+    // const user = getProfile()
 
     return (
         <Layout>
-        <nav>
-            <Link className="text-blue-600" to="/account/">Home</Link>{" "}
-            <Link to="/account/settings/">Settings</Link>{" "}
-            <Link to="/account/billing/">Billing?</Link>{" "}
+        <nav className="text-blue-600">
+            {/* <Link to="/account/">Home</Link>{" "} */}
             <a
                 href="#logout"
                 onClick={e => {
@@ -34,14 +30,13 @@ const Account = () => {
                     e.preventDefault()
                 }}
             >
-                Log Out
+                Log Out  (account.js)
             </a>
         </nav>
-        <Router>
+        {/* <Router>
             <Home path="/account/" user={user} />
-            <Settings path="/account/settings" />
-            <Billing path="/account/billing" />
-        </Router>
+        </Router> */}
+        <p>FIX ME</p>
         </Layout>
     )
 }
