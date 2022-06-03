@@ -17,7 +17,7 @@
     "@reach/router": "^1.2.1",
     "auth0-js": "^9.11.3",
     "gatsby": "^2.18.4",
-    "gatsby-plugin-mdx": "^1.0.62",
+    "gatsby-plugin-mdx": "^2.14.1",
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-remark-mathjax": "^1.0.0",
