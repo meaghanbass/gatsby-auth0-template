@@ -22,7 +22,7 @@
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-remark-mathjax": "^1.0.0",
     "gatsby-source-filesystem": "^2.1.42",
-    "gatsby-transformer-remark": "^2.6.42",
+    "gatsby-transformer-remark": "^5.25.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
